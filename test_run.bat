@@ -1,0 +1,1 @@
+pytest test_createtbl.py > test.log

@@ -1,0 +1,17 @@
+Описание
+
+conftest.py   основной файл pytest
+dbfixture.py  класс для работы с БД
+generator.py  класс для генерации тестовых данных: имен и списков полей
+test_createtbl.py тесткейсы
+Test_plan.odt
+test_run.bat   запуск в windows без вывода сообщений в лог
+test_run_detailed.bat запуск в windows с выводом сообщений в лог
+
+Для запуска тестов необходимо установить драйвер odbc и пакеты:
+odbc driver: https://www.postgresql.org/ftp/odbc/versions/
+pip install pytest
+pip install pyodbc
+
+Запуск тестов осуществляется из каталога теста командой
+pytest test_createtbl.py

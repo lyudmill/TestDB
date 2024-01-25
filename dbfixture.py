@@ -21,10 +21,17 @@ class Dbaccess:
         print(f'\nExecuting query: {query}')
         self.crsr.execute(query)
 
+    def exec_sql_negative(self, query = None):
+        print(f'\nExecuting query: {query}')
+        try:
+            self.crsr.execute(query)
+            raise Exception("\nError: Negative testcase passed successfully")
+        except pyodbc.Error as ex:
+            print(f"\nExpected error occured: \n:{ex}")
+
     def exec_create_table_negative(self, name, fields):
         try:
             f = ",".join(fields)
-            print(f)
             query = f"CREATE TABLE {name} ({f})"
             print(f'\nExecuting wrong query: {query}')
             tmp_cur = self.conn.execute(query)

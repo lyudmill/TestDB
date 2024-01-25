@@ -59,7 +59,7 @@ FIELD_TYPES_VAR= (
 MAX_NAME_LENGTH = 64
 MAX_COL_NUMBER = 1600
 DEFAULT_COL_NUMBER = 10
-PSYMBOLS = "%!\"#$%&'()*+,-./:;<=>?@[\]^`{|~ "
+PSYMBOLS = "%!#$%&()*+,-./:;<=>?@[\]^`{|~ "   #removed from spec symbols: ", '
 NAME_EXCEPTIONS = ("OR", "AND", "IS", "AS", "AT", "BY", "ON", "DO", "IN", "GO", "IF", "LN", "NO",
                    "OR", "TO", "XOR", "USE", "UID", "TOP", "SUM", "SSL", "SET", "REF", "ROW", "PLI", "PAD",
                     "OUT", "OLD", "OFF", "NOT", "MIN", "MAX", "MAP", "KEY", "INT", "GET", "FOR", "EXP",
