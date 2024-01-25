@@ -70,6 +70,7 @@ def test_crtbl_wrong_name_punctuation(dbf, gen):
             continue
     if len(failed) >0:
         raise Exception(f"Error in the following symbols: {failed}")
+     
 def test_crtbl_name_col_with_parenthesis(dbf, gen):
     #Cheking all special symbols in table and column name
     #%!"#$%&'()*+,-./:;<=>?@[\]^`{|~
