@@ -29,7 +29,7 @@ class Dbaccess:
             print(f'\nExecuting wrong query: {query}')
             tmp_cur = self.conn.execute(query)
             tmp_cur.close()
-            raise("Error: Negative testcase passed successfully")
+            raise Exception("Error: Negative testcase passed successfully")
         except pyodbc.Error as ex:
             print(f'\nExpected error occured: \n:{ex}')
 
